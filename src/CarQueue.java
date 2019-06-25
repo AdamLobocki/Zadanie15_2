@@ -17,15 +17,13 @@ public class CarQueue {
                 case 1:
                     scanner.nextLine();
                     System.out.println("Podaj dane samochodu");
-                    Car car = new Car(scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
-                    carList.offer(car);
+                    carList.offer(new Car(scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextInt(), scanner.nextInt(), scanner.nextInt()));
                 case 2:
                     carList.poll();
-
             }
-
             System.out.println("Podaj liczbe 0, 1 lub 2");
             number = scanner.nextInt();
         }
+
     }
 }
